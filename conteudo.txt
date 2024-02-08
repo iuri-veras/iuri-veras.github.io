@@ -1,0 +1,38 @@
+Tarefa prática: Para a seleção, será considerado a tarefa de desenvolvimento de uma página simples.
+Essa página será apenas um único HTML apresentando principalmente:
+                 - Um pouco sobre você
+                 - Por que está se candidatando
+                 - Sua expectativa em participar deste projeto de extensão
+
+Nessa página, será avaliado sua criatividade, originalidade, uso de JavaScript e design agradável.
+Pode-se usar o JSFiddle ou o GitHub Pages, inclusive. O link deverá ser postado neste formulário.
+
+
+Um pouco sobre você: 
+
+- Iuri Veras Andrader Lima, 19 anos
+- Fiz curso técnico de redes de computadores no cefet
+- Indo para o 4º período de engenharia da computação
+
+Por que está se candidatando:
+- Muito interesse na área de desenvolvimento Web
+- Tenho conhecimentos em HTML, CSS, JS e Python
+- Ja cheguei a começar a aprender django a algum tempo mas parei quando entrei na faculdade.
+- Terei bastante disponibilidade nesse semestre e estou em busca de novos desafios
+
+Sua expectativa em participar deste projeto de extensão
+- Aprender novas tecnologias e me aprofundar mais no desenvolvimento de uma aplicação Web
+- Contribuir com a equipe por meio dos conhecimentos que possuo.
+- Trabalhar pela primeira vez em um projeto real e atingir os resultados esperados
+
+
+
+
+
+
+
+
+
+
+
+
