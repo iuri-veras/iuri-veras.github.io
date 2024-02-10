@@ -1,3 +1,5 @@
+// Barra de navegação
+
 let menuIcon = document.querySelector('.menu-icon');
 let divLinks =  document.querySelector('.links');
 
@@ -21,18 +23,67 @@ divLinks.addEventListener('animationend', event => {
     }
 })
 
-let divParagraphs = document.querySelectorAll('.paragraphs p');
-let imagens = ['engenharia.jpg', 'redes.jpg', 'programacao.jpg'];
+// Sobre mim
+let cards = document.querySelectorAll('.card');
 
-divParagraphs.forEach((paragraph, index) => {
-    paragraph.addEventListener('mouseover', () => {
-        let current = document.querySelector('p.active');
-        if(current !== paragraph){
+cards.forEach((card, index) => {
+    card.addEventListener('mouseover', () => {
+        let current = document.querySelector('.card.active');
+        if(current !== card){
             current.classList.remove('active');
-            paragraph.classList.add('active');
-
-            let img = document.getElementById('imgsobremim');
-            img.setAttribute('src', `./image/${imagens[index]}`);
+            card.classList.add('active');
         }
     })
 })
+
+let items = document.querySelectorAll('li')
+items[0].addEventListener('onscreen', () => {
+    console.log('iuri')
+})
+
+// Motivos
+
+let btnEsquerda = document.querySelector('button.left');
+let btnDireita = document.querySelector('button.right');
+let circles = document.querySelectorAll('.controllers span')
+let images = document.querySelectorAll('.content-slider');
+
+let id = 0;
+let max = 4;
+
+circles.forEach((circle, index) => {
+    circle.addEventListener('click', () => {
+        id = index;
+        mudarImagem();
+    })
+})
+
+function mudarImagem(){
+    // Retira a classe do elemento atual
+    let currentImg = document.querySelector('.content-slider.current');
+    currentImg.classList.remove('current');
+
+    let currentCircle = document.querySelector('.controllers span.current');
+    currentCircle.classList.remove('current');
+
+    // Adiciona a classe no novo elemento atual
+    images[id].classList.add('current');
+    circles[id].classList.add('current');
+}
+
+btnDireita.addEventListener('click', () => {
+    id += 1
+    if(id == max){
+        id = 0
+    }
+})
+
+btnEsquerda.addEventListener('click', () => {
+    if(id == 0){
+        id = max
+    }
+    id -= 1
+})
+
+btnEsquerda.addEventListener('click', mudarImagem)
+btnDireita.addEventListener('click', mudarImagem)
